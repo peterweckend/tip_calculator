@@ -6,7 +6,7 @@
    font-size: 100%;
    vertical-align: baseline;
    background: transparent;
-	color: #34515e;
+	 color: #34515e;
    text-decoration: none;
    font-family: 'Raleway', sans-serif;
 }
@@ -104,6 +104,11 @@ input[type=button] {
 
 input[type=button]:active {
    background: #a6a6a6;
+}
+
+select {
+  background: #ccc;
+  border: 2px solid #ccc;
 }
 
 

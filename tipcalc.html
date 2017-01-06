@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link href="css/stylesheet_tipcalc.css" type="text/css" rel="stylesheet" />
+		<link href="stylesheet_tipcalc.css" type="text/css" rel="stylesheet" />
 		<link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
 		<link rel="shortcut icon" href="/fav_icon.ico" type="image/x-icon">
 		<link rel="icon" href="/fav_icon.ico" type="image/x-icon">
 		<title>Peter Weckend</title>
-		<script src="jquery-3.1.1.min.js"></script>
-		<script src = "js_tipcalc.js"></script>
+
 	</head>
 
 	<body>
@@ -26,15 +25,30 @@
 
 		<div>
 			<form>
-				<p>Enter the bill subtotal: <input type="text" id="subtotal" name="subtotal" />
+				<p>Enter the bill subtotal: <input type="text" id="subtotal" name="subtotal" onblur="AddDollar()"/>
 				</p>
-				<p>Enter what percent you want to tip: <input type="text" id="tipval" name="subtotal" />
+				<p>Enter what percent you want to tip: <input type="text" id="tipval" name="subtotal" onblur="AddPercent()"/>
 				</p>
+<!-- 				<p>What Canadian province are you in?</p>
+				<select name="province" id="province">
+					<option value="default" selected>Province</option>
+					<option value="alberta">BC</option>
+					<option value="alberta">Alberta</option>
+					<option value="alberta">Saskatchewan</option>
+					<option value="alberta">Manitoba</option>
+					<option value="alberta">Ontario</option>
+					<option value="alberta">Quebec</option>
+				</select> -->
+
 				<input type="button" onclick="CalculateValues()" value="Submit" />
-				<p>The total before taxes is: <input type="text" id="subtotal_sol" value="Subtotal here" readonly></p>
+				<input type="button" onclick="Reset()" value="Reset" />
+				<p>You are tipping <input type="text" id="tipamt" value="Total here" readonly></p>
+				<p>The total is <input type="text" id="total_sol" value="Subtotal here" readonly></p>
 			</form>
 
 
+		<script src="jquery-3.1.1.min.js"></script>
+		<script src = "js_tipcalc.js"></script>
 
 	</body>
 
