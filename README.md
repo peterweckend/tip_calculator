@@ -1,2 +1,2 @@
 # tip_calculator
-Calculates how much a tip will cost by Canadian province with taxes.
+Made to help practice jQuery and JavaScript. Calculates tips and subtotals with tip. Includes input validation and automatically added units. 
