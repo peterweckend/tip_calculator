@@ -1,0 +1,136 @@
+* {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   outline: 0;
+   font-size: 100%;
+   vertical-align: baseline;
+   background: transparent;
+	color: #34515e;
+   text-decoration: none;
+   font-family: 'Raleway', sans-serif;
+}
+
+body {
+   background-color: #fdf7eb;
+}
+header {
+	text-align: center;
+	font-size: 300%;
+}
+
+nav {
+   background-color: #34515e; 
+   clear:both;
+   font-size: 20px;
+
+}
+nav ul {
+   margin: 0px;
+   padding: 15px 0px 15px 20px;
+}
+
+nav li {
+   display: inline;
+   margin-right: 40px;
+
+}
+
+nav li a {
+   color: #fdf7eb;
+}
+
+nav li a:hover {
+   color: #919ba0;
+}
+
+nav li a.current {
+   color: #fdf7eb;
+}
+
+#title {
+   padding: 30px 0px 0px 0px;
+   font-size: 50px;
+ /*  border-bottom: #262626;
+   border-style: solid;
+   border-width: 50%*/
+}
+
+
+
+#subtitle {
+   padding-top: 30px;
+   font-size: 30px;
+   font-weight: 500;
+   margin-bottom: 30px;
+   margin-left: 5%;
+   margin-right: 5%;
+}
+
+#footer {
+   text-align: center;
+}
+
+
+.link:hover {
+   color: #919ba0;
+}
+
+form {
+   margin-top: 50px;
+   margin-left: 50px;
+}
+
+
+input[type=text] {
+    padding:5px; 
+    border:2px solid #ccc; 
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+input[type=text]:focus {
+    border-color:#333;
+}
+
+input[type=button] {
+    padding:5px 15px; 
+    background:#ccc; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+
+input[type=button]:active {
+   background: #a6a6a6;
+}
+
+
+@media screen and (max-width: 768px) {
+   nav li {
+      margin-right: 12px;
+   }
+   nav ul {
+      margin: 0px;
+      padding: 10px 0px 10px 20px;
+      font-size: 80%
+   }
+
+   #title {
+      font-size: 100%;
+   }
+
+   #subtitle {
+      padding-top: 25px;
+      font-size: 50%;
+      margin-bottom: 25px;
+   }
+
+   #relcour {
+      font-size: 26px;
+   }
+
+
+}
+

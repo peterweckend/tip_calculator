@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="css/stylesheet_tipcalc.css" type="text/css" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+		<link rel="shortcut icon" href="/fav_icon.ico" type="image/x-icon">
+		<link rel="icon" href="/fav_icon.ico" type="image/x-icon">
+		<title>Peter Weckend</title>
+		<script src="jquery-3.1.1.min.js"></script>
+		<script src = "js_tipcalc.js"></script>
+	</head>
+
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<li><a href="index.html">Peter Weckend</a></li>
+					<li><a href="education.html">Education</a></li>
+					<li><a href="https://github.com/peterweckend">Projects</a></li>
+					<li><a href="Peter.Weckend_Resume(EarlyJan16).pdf">Resume</a></li>
+				</ul>
+			</nav>
+			<h1 id="title" class="c2">Tip Calculator</h1>
+		
+		</header>
+
+		<div>
+			<form>
+				<p>Enter the bill subtotal: <input type="text" id="subtotal" name="subtotal" />
+				</p>
+				<p>Enter what percent you want to tip: <input type="text" id="tipval" name="subtotal" />
+				</p>
+				<input type="button" onclick="CalculateValues()" value="Submit" />
+				<p>The total before taxes is: <input type="text" id="subtotal_sol" value="Subtotal here" readonly></p>
+			</form>
+
+
+
+	</body>
+
+
+</html>
