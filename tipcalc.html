@@ -29,21 +29,30 @@
 				</p>
 				<p>Enter what percent you want to tip: <input type="text" id="tipval" name="subtotal" onblur="AddPercent()"/>
 				</p>
-<!-- 				<p>What Canadian province are you in?</p>
-				<select name="province" id="province">
-					<option value="default" selected>Province</option>
-					<option value="alberta">BC</option>
-					<option value="alberta">Alberta</option>
-					<option value="alberta">Saskatchewan</option>
-					<option value="alberta">Manitoba</option>
-					<option value="alberta">Ontario</option>
-					<option value="alberta">Quebec</option>
-				</select> -->
+				<p>How many people are splitting the bill? (Optional):</p>
+				<select name="peoplecount" id="peoplecount">
+					<option value="1" selected>1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+					<option value="13">13</option>
+					<option value="14">14</option>
+				</select>
 
 				<input type="button" onclick="CalculateValues()" value="Submit" />
 				<input type="button" onclick="Reset()" value="Reset" />
-				<p>You are tipping <input type="text" id="tipamt" value="Total here" readonly></p>
-				<p>The total is <input type="text" id="total_sol" value="Subtotal here" readonly></p>
+				<p>You are tipping <input type="text" id="tipamt" value="$0.00" readonly></p>
+				<p>The total is <input type="text" id="total_sol" value="$0.00" readonly></p>
+				<p class="group">Each person tips <input type="text" class="group" id="split_tipamt" value="$0.00" readonly></p>
+				<p class="group">Each person should pay <input type="text" class="group" id="split_total_sol" value="$0.00" readonly></p>
 			</form>
 
 

@@ -2,10 +2,17 @@
 
 function CalculateValues(){
 	var finalamount = Total();
-	var taxamount = TaxTotal();
+	var tipamount = TipTotal();
 	if (ValidateTip(1) && ValidateSub(1)){
 		TotalOutput(finalamount);
-		TipOutput(taxamount);
+		TipOutput(tipamount);
+
+		if ($('#peoplecount').val() != '1') {
+			$('.group').css("display", "block");
+			var tipsplit = Number(tipamount) / Number($('#peoplecount').val());
+			var totalsplit = finalamount / Number($('#peoplecount').val());
+			GroupOutput(tipsplit, totalsplit);
+		}
 
 	} else {
 		TipError();
@@ -21,12 +28,11 @@ function Total(){
 	return subtotal + (subtotal * tipval);
 }
 
-function TaxTotal(){
+function TipTotal(){
 	var subtotal = Number($('#subtotal').val().slice(1));
 	var tipval = Number($('#tipval').val().slice(0,-1)) / 100;
 	return subtotal * tipval;
 }
-
 
 
 // mode = 1 is final check, we can ignore $ and %
@@ -117,6 +123,11 @@ function TotalOutput(output){
 	$('#total_sol').val('$'+output.toFixed(2));
 }
 
+function GroupOutput(split_tip, split_total){
+	$('#split_tipamt').val('$'+split_tip.toFixed(2));
+	$('#split_total_sol').val('$'+split_total.toFixed(2));
+}
+
 function TipError(){
 	$('#tipamt').val('Error.');
 }
@@ -126,10 +137,12 @@ function TotalError(){
 }
 
 function Reset(){
-	$('#tipamt').val('');
-	$('#total_sol').val('');
+	$('#tipamt').val('$0.00');
+	$('#total_sol').val('$0.00');
 	$('#subtotal').val('');
 	$('#tipval').val('');
+	$('.group').css("display", "none");
+	$('#peoplecount').val('1');
 }
 
 function AddPercent(){

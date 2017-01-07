@@ -109,6 +109,11 @@ input[type=button]:active {
 select {
   background: #ccc;
   border: 2px solid #ccc;
+  display: block;
+}
+
+.group {
+  display: none;
 }
 
 
