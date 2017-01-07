@@ -6,13 +6,13 @@
    font-size: 100%;
    vertical-align: baseline;
    background: transparent;
-	 color: #34515e;
+	 color: #7d1935;
    text-decoration: none;
    font-family: 'Raleway', sans-serif;
 }
 
 body {
-   background-color: #fdf7eb;
+   background-color: #f5f3ee;
 }
 header {
 	text-align: center;
@@ -20,7 +20,7 @@ header {
 }
 
 nav {
-   background-color: #34515e; 
+   background-color: #7d1935; 
    clear:both;
    font-size: 20px;
 
@@ -37,23 +37,24 @@ nav li {
 }
 
 nav li a {
-   color: #fdf7eb;
+   color: #f5f3ee;
 }
 
 nav li a:hover {
-   color: #919ba0;
+   color: #400d1b;
 }
 
 nav li a.current {
-   color: #fdf7eb;
+   color: #f5f3ee;
 }
 
 #title {
-   padding: 30px 0px 0px 0px;
+   padding: 40px 0px 0px 0px;
    font-size: 50px;
  /*  border-bottom: #262626;
    border-style: solid;
    border-width: 50%*/
+
 }
 
 
@@ -77,7 +78,7 @@ nav li a.current {
 }
 
 form {
-   margin-top: 50px;
+   margin-top: 60px;
    margin-left: 50px;
 }
 
@@ -87,6 +88,7 @@ input[type=text] {
     border:2px solid #ccc; 
     -webkit-border-radius: 5px;
     border-radius: 5px;
+    background-color: #fdfcf6;
 }
 
 input[type=text]:focus {
@@ -95,28 +97,68 @@ input[type=text]:focus {
 
 input[type=button] {
     padding:5px 15px; 
-    background:#ccc; 
+    background:#4a96ad; 
     border:0 none;
     cursor:pointer;
     -webkit-border-radius: 5px;
     border-radius: 5px; 
+    color: white;
+    margin-right: 15px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    width: 100px;
 }
 
 input[type=button]:active {
-   background: #a6a6a6;
+   background: #366c7d;
 }
 
 select {
-  background: #ccc;
-  border: 2px solid #ccc;
-  display: block;
+  background: #fdfcf6;
+  border: 2px solid #4a96ad;
+  color: #7d1935;
+  margin-left: 90px;
+  width: 50%;
+
 }
 
 .group {
   display: none;
 }
 
+form {
+  display: table;
+  border: 2px solid #ccc;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-left: 15px;
 
+}
+
+p {
+  display: table-row;
+
+}
+
+label {
+  display: table-cell;
+  height: 40px;
+
+}
+
+input {
+  display: table-cell;
+}
+
+#split_tipamt {
+  margin-top: 20px;
+}
+
+.thick {
+  font-weight: bold;
+}
 @media screen and (max-width: 768px) {
    nav li {
       margin-right: 12px;

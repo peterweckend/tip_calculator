@@ -8,7 +8,9 @@ function CalculateValues(){
 		TipOutput(tipamount);
 
 		if ($('#peoplecount').val() != '1') {
-			$('.group').css("display", "block");
+			$('.group3').css("display", "table-row");
+			$('.group1').css("display", "table-cell");
+			$('.group2').css("display", "table-cell");
 			var tipsplit = Number(tipamount) / Number($('#peoplecount').val());
 			var totalsplit = finalamount / Number($('#peoplecount').val());
 			GroupOutput(tipsplit, totalsplit);
@@ -129,11 +131,11 @@ function GroupOutput(split_tip, split_total){
 }
 
 function TipError(){
-	$('#tipamt').val('Error.');
+	$('#tipamt').val('$0.00');
 }
 
 function TotalError(){
-	$('#total_sol').val('Error.');
+	$('#total_sol').val('$0.00');
 }
 
 function Reset(){

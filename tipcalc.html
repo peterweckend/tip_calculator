@@ -25,34 +25,53 @@
 
 		<div>
 			<form>
-				<p>Enter the bill subtotal: <input type="text" id="subtotal" name="subtotal" onblur="AddDollar()"/>
+				<p>
+					<label for="subtotal">Enter the bill subtotal: </label>
+					<input type="text" id="subtotal" name="subtotal" onblur="AddDollar()"/>
 				</p>
-				<p>Enter what percent you want to tip: <input type="text" id="tipval" name="subtotal" onblur="AddPercent()"/>
+				<p>
+					<label for="tipval">Enter what percent you want to tip: </label>
+					<input type="text" id="tipval" name="subtotal" onblur="AddPercent()"/>
 				</p>
-				<p>How many people are splitting the bill? (Optional):</p>
-				<select name="peoplecount" id="peoplecount">
-					<option value="1" selected>1</option>
-					<option value="2">2</option>
-					<option value="3">3</option>
-					<option value="4">4</option>
-					<option value="5">5</option>
-					<option value="6">6</option>
-					<option value="7">7</option>
-					<option value="8">8</option>
-					<option value="9">9</option>
-					<option value="10">10</option>
-					<option value="11">11</option>
-					<option value="12">12</option>
-					<option value="13">13</option>
-					<option value="14">14</option>
-				</select>
+
+				<p>
+					<label for="peoplecount">How many people are splitting the bill? (Optional): </label>
+					<select name="peoplecount" id="peoplecount">
+						<option value="1" selected>1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+						<option value="12">12</option>
+						<option value="13">13</option>
+						<option value="14">14</option>
+					</select>
+				</p>
 
 				<input type="button" onclick="CalculateValues()" value="Submit" />
 				<input type="button" onclick="Reset()" value="Reset" />
-				<p>You are tipping <input type="text" id="tipamt" value="$0.00" readonly></p>
-				<p>The total is <input type="text" id="total_sol" value="$0.00" readonly></p>
-				<p class="group">Each person tips <input type="text" class="group" id="split_tipamt" value="$0.00" readonly></p>
-				<p class="group">Each person should pay <input type="text" class="group" id="split_total_sol" value="$0.00" readonly></p>
+				<p>
+					<label class="thick" for="tipamt">You are tipping </label>
+					<input type="text" class="thick" id="tipamt" value="$0.00" readonly>
+				</p>
+				<p>
+					<label class="thick" for="total_sol">The total is </label>
+					<input type="text" class="thick" id="total_sol" value="$0.00" readonly>
+				</p>
+				<p class="group group3">
+					<label class="group2" for="split_tipamt">Each person tips </label>
+					<input type="text" class="group group1" id="split_tipamt" value="$0.00" readonly>
+				</p>
+				<p class="group group3">
+					<label class="group2" for="split_total_sol">Each person should pay a total of </label>
+					<input type="text" class="group group1" id="split_total_sol" value="$0.00" readonly>
+				</p>
 			</form>
 
 
