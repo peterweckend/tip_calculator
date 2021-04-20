@@ -1,5 +1,5 @@
 # tip_calculator
-http://peterweckend.com/tipcalc.html
+~~http://peterweckend.com/tipcalc.html~~
 
 Made to help practice jQuery and JavaScript. Calculates tips and totals. Includes input validation, automatically added units, and the ability to split the bill with other people.
 
